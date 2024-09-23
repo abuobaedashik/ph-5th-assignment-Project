@@ -15,6 +15,12 @@ document.getElementById('donation-btn-1').addEventListener('click',function (eve
     if (noakhliDonationInput>=0 && typeof noakhliDonationInput === 'number') {
         document.getElementById('total-balance-noakhali').innerText =noakhliFoundAdd;
         document.getElementById('total-balance').innerText =minusFromTotal;
+        // console.log(noakhliDonationInput)
+        // history added 1
+        const record1 =document.createElement('p');
+        record1.innerText=`${noakhliDonationInput} Taka is Donated for Flood Relief in Noakhali,Bangladesh`;
+        const historyGet = document.getElementById('history-addrd').appendChild(record1);
+        historyGet.classList.add('history-card')
     }
     else{
        alert('Invalid Amount!');
@@ -35,6 +41,11 @@ document.getElementById('donation-btn-2').addEventListener('click',function (eve
     if (feniDonationInput>=0 && typeof feniDonationInput === 'number') {
         document.getElementById('total-balance-feni').innerText =feniFoundAdd;
         document.getElementById('total-balance').innerText =minusFromTotal;
+        // history added 2
+        const record2 =document.createElement('p');
+        record2.innerText=`${feniDonationInput} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+        const historyGet2 = document.getElementById('history-addrd').appendChild(record2);
+        historyGet2.classList.add('history-card');
     }
     else{
        alert('Invalid Amount!');
@@ -55,8 +66,15 @@ document.getElementById('donation-btn-3').addEventListener('click',function (eve
      if (quotaDonationInput>=0 && typeof quotaDonationInput === 'number') {
         document.getElementById('total-balance-quota').innerText =quotaFoundAdd;
         document.getElementById('total-balance').innerText =minusFromTotal;
+        // history added 3
+        const record3 =document.createElement('p');
+        record3.innerText=`${quotaDonationInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+         const historyGet3 = document.getElementById('history-addrd').appendChild(record3);
+        historyGet3.classList.add('history-card')
     }
     else{
        alert('Invalid Amount!');
     } 
 });
+
+

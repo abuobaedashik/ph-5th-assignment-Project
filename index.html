@@ -18,6 +18,12 @@
         .common-bg{
           background-color: blue !important;
         }
+        .history-card{
+          padding: 15px 20px;
+          border: 1px solid rgba(17, 17, 17, 0.1);
+          margin: 20px 70px;
+          border-radius: 16px;
+        }
     </style>
 </head>
 <body class="text-center">
@@ -86,7 +92,8 @@
               id="donation-money-2"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-3" />
-               <button id="donation-btn-2" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</button>
+              <!-- <a href="#my_modal_8"  id="donation-btn-2" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</a> -->
+              <button onclick="my_modal_8.showModal()" id="donation-btn-2"  class="w-full mt-4  btn bg-[#B4F461]">open modal</button> 
             </div>
              
           </div>
@@ -113,13 +120,28 @@
                <button id="donation-btn-3" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</button>
             </div>
              
+        </div>
+
+        <!-- modal code  -->
+        <!-- <a href="#my_modal_8" class="btn">open modal</a> -->
+
+         <!-- Put this part before </body> tag -->
+          <div class="modal" role="dialog" id="my_modal_8">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Congratulations!</h3>
+              <p class="py-4">You Have Donate For HumanKind</p>
+              <p class="py-4">Successfully</p>
+              <div class="modal-action">
+                <a href="#" class="btn">Close </a>
+              </div>
+            </div>
           </div>
      </main> 
      <!-- History section -->
       <section id="history" class="hidden">
-          <div>
+          <div id="history-addrd" class="">
             <h1 class="text-4xl">History</h1>
-            <h1>Loading...</h1>
+            
           </div>
       </section>
 

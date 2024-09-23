@@ -11,27 +11,18 @@
     <!-- daisy Ui and Tailwind Css CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-
-              }
-            }
-          }
-        }
-    </script>
     <style>
         body{
             font-family: "Lexend", sans-serif;
+        }
+        .common-bg{
+          background-color: blue !important;
         }
     </style>
 </head>
 <body class="text-center">
     <header class="sticky top-0">
-        <nav class=" flex bg-[#F9F7F3] justify-around items-center pt-5 pb-7">
+        <nav class=" flex bg-[#F9F7F3] justify-around items-center pt-5 pb-7 backdrop:blur-sm bg-opacity-80 ">
             <button class="px-4 py-2 rounded-lg bg-[#B4F461] font-semibold text-xl text-[#111111]">Blog</button>
             <div class="title gap-1 flex text-xl items-center text-[#111111] font-semibold">
                  <img class="w-10 h-10" src="./assets/logo.png" alt="logo">
@@ -42,13 +33,14 @@
                 <p id="total-balance">108000</p>
                 <p>BDT</p></div>
         </nav>
-        <div class="2-button mt-4 bg-opacity-20 ">
-            <button class="btn bg-[#B4F461] text-lg ">Donation</button>
-            <button class="btn ml-3 text-lg bg-white">History</button>
+        <div class="2-button mt-0 backdrop-blur-md pt-3">
+            <button id="donationBtn" class="btn bg-[#B4F461] text-lg ">Donation</button>
+            <button id="history-btn" class="btn ml-3 text-lg bg-white">History</button>
             <div class="divider"></div>
         </div>
     </header>
-     <main class="w-9/12 mx-auto">
+    <!-- All section -->
+     <main id="mainSec" class="w-9/12 mx-auto ">
         <!-- card 1 donate for Noakhali, Bangladesh -->
         <div class="p-5 flex flex-col md:flex-row border border-[rgba(17, 17, 17, 0.1)] bg-base-100 shadow-xl rounded-lg ">
             <div class="md:w-1/2">
@@ -123,7 +115,16 @@
              
           </div>
      </main> 
+     <!-- History section -->
+      <section id="history" class="hidden">
+          <div>
+            <h1 class="text-4xl">History</h1>
+            <h1>Loading...</h1>
+          </div>
+      </section>
+
      <script src="./js/utilites.js"></script>
      <script src="./js/Fiture.js"></script>
+     <script src="./js/historyPage.js"></script>
 </body>
 </html>

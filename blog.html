@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy Ui and Tailwind Css CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="sticky top-0"></header>
+        <nav class=" flex bg-[#F9F7F3] justify-around items-center pt-5 pb-7 backdrop:blur-sm bg-opacity-80 ">
+            <a href="index.html" class="px-4 py-2 rounded-lg bg-[#b4f46185] font-semibold text-xl text-[#111111]">Home</a>
+            <div class="title gap-1 flex text-xl items-center text-[#111111] font-semibold">
+                 <img class="w-10 h-10" src="./assets/logo.png" alt="logo">
+                 <p class="hidden md:block">Donate Bangladesh</p>
+            </div>
+             <div class="flex text-xl items-center">
+                <img class="w-7 h-7" src="./assets/coin.png" alt="coin">
+                <p id="total-balance">108000</p>
+                <p>BDT</p></div>
+        </nav>
+    </header>
+
+    <main class="w-10/12 mx-auto mt-4">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+    </main>
+     <script src="./js/Fiture.js"></script>
+</body>
+</html>

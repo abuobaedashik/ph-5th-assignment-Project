@@ -40,7 +40,7 @@
                 <p>BDT</p></div>
         </nav>
         <div class="2-button mt-0 backdrop-blur-md pt-3">
-            <button id="donationBtn" class="btn bg-[#B4F461] text-lg ">Donation</button>
+            <button id="donationBtn" class="btn bg-[#B4F461]] text-lg ">Donation</button>
             <button id="history-btn" class="btn ml-3 text-lg bg-white">History</button>
             <div class="divider"></div>
         </div>
@@ -67,7 +67,7 @@
               id="donation-money-1"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-3" />
-               <button id="donation-btn-1" class="w-full btn mt-4 bg-[#b4f4618d]">Donate Now</button>
+               <button id="donation-btn-1" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</button>
             </div>
              
           </div>
@@ -93,7 +93,7 @@
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-3" />
               <!-- <a href="#my_modal_8"  id="donation-btn-2" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</a> -->
-              <button onclick="my_modal_8.showModal()" id="donation-btn-2"  class="w-full mt-4  btn bg-[#b4f4618d]">Donate Now</button> 
+              <button onclick="my_modal_8.showModal()" id="donation-btn-2"  class="w-full mt-4  btn bg-[#B4F461]">Donate Now</button> 
             </div>
              
           </div>
@@ -117,32 +117,40 @@
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-3" />
-               <button id="donation-btn-3" class="w-full btn mt-4 bg-[#b4f4618d]">Donate Now</button>
+               <button id="donation-btn-3" class="w-full btn mt-4 bg-[#B4F461]">Donate Now</button>
             </div>
              
         </div>
 
         <!-- modal code  -->
-        <!-- <a href="#my_modal_8" class="btn">open modal</a> -->
-
-         <!-- Put this part before </body> tag -->
-          <div class="modal" role="dialog" id="my_modal_8">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Congratulations!</h3>
-              <p class="py-4">You Have Donate For HumanKind</p>
-              <p class="py-4">Successfully</p>
-              <div class="modal-action">
-                <a href="#" class="btn">Close </a>
-              </div>
+        <dialog id="my-modal" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-extrabold">Congratulations</h3>
+            <img class="m-auto w-10 h-10" src="./assets/coin.png" alt="coin">
+            <p class="pt-4">You Are Donated for Humankind</p>
+            <p class="py-2 font-semibold">Successfully</p>
+            <div class="modal-action">
+              <form method="dialog" class="m-auto">
+                  <button class="btn">Close Confirmation</button>
+              </form>
             </div>
           </div>
+        </dialog>
+
+          <footer class="bg-[#F9F7F3] w-full py-4 mt-5">
+            <p class="text-sm font-light">© Abu Obaed  All rights reserved 2024 </p>
+          </footer>
      </main> 
+    
      <!-- History section -->
       <section id="history" class="hidden">
           <div id="history-addrd" class="">
             <h1 class="text-4xl">History</h1>
             
           </div>
+          <footer class="bg-[#F9F7F3] w-full py-4 mt-5 ">
+            <p  class="text-sm font-light">© Abu Obaed  All rights reserved 2024 </p>
+          </footer>
       </section>
 
      <script src="./js/utilites.js"></script>

@@ -1,3 +1,5 @@
+
+// common funtions
 function commonInputIdGet(id) {
   const donation =  document.getElementById(id).value;
   const donationNum =parseFloat(donation);
@@ -10,9 +12,8 @@ function commonBalanceIdGet(id) {
 }
 // date funtion
 function date() {
-  var date = new Date();
-  var str = date.toString();
-  return str ;
+  let t= new Date().toLocaleString();
+  return t;
 }
 
 

@@ -20,6 +20,13 @@ document.getElementById('donation-btn-1').addEventListener('click',function (eve
         // history added 1
         const record1 =document.createElement('p');
         record1.innerText=`${noakhliDonationInput} Taka is Donated for Flood Relief in Noakhali,Bangladesh`;
+        
+        // time and date now
+        const date = new Date().toLocaleDateString('BD'); 
+        const time = new Date().toLocaleTimeString('BD');
+        record1.innerText += `\n Date: ${date} ${time} GMT +0600 (Bangladesh Standard Time)`;
+
+        //  history and modal funtionality
         const historyGet = document.getElementById('history-addrd').appendChild(record1);
         historyGet.classList.add('history-card')
         document.getElementById('my-modal').showModal();
@@ -47,9 +54,14 @@ document.getElementById('donation-btn-2').addEventListener('click',function (eve
         // modal
         document.getElementById('my-modal').showModal();
         // history added 2
-        const time =date();
         const record2 =document.createElement('p');
-        record2.innerText=`${feniDonationInput} Taka is Donated for Flood Relief in Feni,Bangladesh ${time}`;
+        record2.innerHTML=`${feniDonationInput} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+        
+        // time and date now
+        const date = new Date().toLocaleDateString('BD'); 
+        const time = new Date().toLocaleTimeString('BD');
+        record2.innerText += `\n Date: ${date} ${time} GMT +0600 (Bangladesh Standard Time)`;
+
         const historyGet2 = document.getElementById('history-addrd').appendChild(record2);
         historyGet2.classList.add('history-card');  
     }
@@ -77,6 +89,11 @@ document.getElementById('donation-btn-3').addEventListener('click',function (eve
         // history added 3
         const record3 =document.createElement('p');
         record3.innerText=`${quotaDonationInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+        record3.classList.add('block')
+         // time and date now
+        const date = new Date().toLocaleDateString('BD'); 
+        const time = new Date().toLocaleTimeString('BD');
+        record3.innerText += `\n Date: ${date} ${time} GMT +0600 (Bangladesh Standard Time)`;
          const historyGet3 = document.getElementById('history-addrd').appendChild(record3);
         historyGet3.classList.add('history-card')
         

@@ -10,11 +10,7 @@ function commonBalanceIdGet(id) {
   const donationNum =parseFloat(donation);
     return donationNum;
 }
-// date funtion
-function date() {
-  let t= new Date().toLocaleString();
-  return t;
-}
+
 
 
 
